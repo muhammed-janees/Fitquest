@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitQuest</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header>
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-color-white">Fit</span>Quest
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a>
+                    </li>
+                    <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                    <li><button
+                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Free
+                            Trial</button></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="#features"
+                            class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a id="hLink" href="#testimonial"
+                            class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
+                    <li><a id="hLink" href="#pricing"
+                            class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a id="hLink" href="#contact"
+                            class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                    <li><button class="btn">Free Trial</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- home -->
+        <section id="home" class="relative">
+            <div class="blob1"></div>
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="title mb-4">WORKOUTS YOU’LL ACTUALLY ENJOY</h1>
+                        <p class="leading-relaxed mb-10">Choose from over 2,000 science-backed, endorphin-inducing
+                            workouts with the easy-to-use FitQuest app.</p>
+                        <button class="btn">START FREE TRIAL</button>
+                        <p class="leading-relaxed text-xs mt-2">Cancel any time. Payments start after trial, free trial
+                            for new customers only.</p>
+                    </div>
+                    <div class="md:w-1/2" data-aos="zoom-in" data-aos-duration="1250">
+                        <img src="./images/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- features -->
+        <section id="features" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Our features</h4>
+                    <h1 class="title">Your Ultimate Workout Companion</h1>
+                    <p class="mt-3">We offers a broad range of workout plans, so everyone should find their cup of
+                        coffee.</p>
+                </div>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                    <!-- card no 1 -->
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-video text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Video</h3>
+                        <p class="leading-relaxed">Include videos or detailed instructions for each exercise to ensure
+                            users perform them with proper form and technique.</p>
+                    </div>
+                    <!-- card no 2 -->
+                    <div data-aos="fade-up" data-aos-duration="1250"
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-list text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Well Structured</h3>
+                        <p class="leading-relaxed">A collection of pre-designed workout plans suitable for different
+                            fitness levels, goals, and interests.</p>
+                    </div>
+                    <!-- card no 3 -->
+                    <div data-aos="fade-up" data-aos-duration="1500"
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-phone text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">24 X 7 Support</h3>
+                        <p class="leading-relaxed">Offer the option for users to connect with certified trainers for
+                            personalized coaching and guidance.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- our-features -->
+        <section id="our_features">
+            <div class="container py-20 relative">
+                <div class="blob2"></div>
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-12 md:w-1/2" data-aos="zoom-in" data-aos-duration="1250">
+                        <img src="./images/4.png" alt="">
+                    </div>
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h1 class="title mb-4">WORK OUT ANYTIME, ANYWHERE, ON ANY DEVICE</h1>
+                        <p class="leading-relaxed mb-10">It emphasizes the flexibility and convenience of accessing
+                            fitness routines and exercises from the comfort of your own space, using any device of your
+                            choice. Whether at home, in the office, or on the go, this approach allows individuals to
+                            seamlessly integrate fitness into their busy lifestyles.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial -->
+        <section id="testimonial" class="bg-color-primary-light py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-color-secondary mb-4">Testimonial</h4>
+                <h1 class="title">SUCCESS STORIES FROM OUR CLUB</h1>
+            </div>
+            </div>
+
+            <!-- Container for the Testimonials -->
+            <div class="grid gap-6 text-center md:grid-cols-3 lg:gap-12 ">
+                <!-- First Testimonial -->
+                <div class="mb-12 md:mb-0">
+                    <div class="mb-6 flex justify-center">
+                        <img src="./images/u1.jpg"
+                            class="w-32 rounded-full shadow-lg dark:shadow-black/30 border-2 border-color-secondary" />
+                    </div>
+                    <h5 class="mb-4 text-xl font-semibold text-color-secondary">Maria Smantha</h5>
+                    <p class="mb-4 mt-4 text-color-white dark:text-neutral-300 inline-block h-7 pr-3"><i
+                            class="fa-solid fa-quote-left fa-xl text-color-secondary"></i>The FitQuest transformed my
+                        workout routine, providing personalized plans that helped me achieve my goals faster than ever
+                        <i class="fa-solid fa-quote-right fa-xl text-color-secondary"></i>
+                    </p>
+                </div>
+
+                <!-- Second Testimonial -->
+                <div class="mb-12 md:mb-0">
+                    <div class="mb-6 flex justify-center">
+                        <img src="./images/u2.jpg"
+                            class="w-32 rounded-full shadow-lg dark:shadow-black/30 border-2 border-color-secondary" />
+                    </div>
+                    <h5 class="mb-4 text-xl font-semibold text-color-secondary">Lisa Cudrow</h5>
+                    <p class="mb-4 mt-4 text-color-white dark:text-neutral-300 inline-block h-7 pr-3"> <i
+                            class="fa-solid fa-quote-left fa-xl text-color-secondary"></i>With the help of the
+                        FitQuest's diverse exercise library and supportive community, I stayed motivated and saw
+                        significant improvements in my overall fitness <i
+                            class="fa-solid fa-quote-right fa-xl text-color-secondary"></i>
+                    </p>
+                </div>
+
+                <!-- Third Testimonial -->
+                <div class="mb-12 md:mb-0">
+                    <div class="mb-6 flex justify-center">
+                        <img src="./images/u3.jpg"
+                            class="w-32 rounded-full shadow-lg dark:shadow-black/30 border-2 border-color-secondary" />
+                    </div>
+
+                    <h5 class="mb-4 text-xl font-semibold text-color-secondary">John Smith</h5>
+                    <p class="mb-4 mt-4 text-color-white dark:text-neutral-300 inline-block h-7 pr-3"> <i
+                            class="fa-solid fa-quote-left fa-xl text-color-secondary"></i>The FitQuest's easy-to-use
+                        interface and detailed progress tracking helped me stay on track and maintain a healthy
+                        lifestyle effortlessly <i class="fa-solid fa-quote-right fa-xl text-color-secondary"></i>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- pricing -->
+        <section id="pricing" class="bg-color-primary-dark">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Payments start after 30 day free trial.*</h4>
+                    <h1 class="title">START YOUR 30-DAY FREE TRIAL TODAY</h1>
+                </div>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                    <!-- card no 1 -->
+                    <div></div>
+
+                    <!-- card no 2 -->
+                    <div
+                        class="bg-color-white border-4 border-solid border-color-gray text-center py-2 px-2 rounded-2xl cursor-pointer ease-in duration-200 hover:border-color-secondary">
+                        <h3 class="text-3xl text-color-primary font-bold py-4">Base</h3>
+                        <p class="leading-relaxed text-color-primary text-2xl">Rs.199.00<span
+                                class="text-lg">/month</span></p>
+                        <ul class="text-color-primary text-left mt-10 mb-10">
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> 16 fitness
+                                programs only</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Three
+                                workouts per program only</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Stream from
+                                web and mobile only</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-x" style="color: #FF0000;"></i> Iconic BODYPUMP
+                                workout</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-x" style="color: #FF0000;"></i> Indoor Cycling
+                                workout</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-x" style="color: #FF0000;"></i> Plans and
+                                Challenges</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-x" style="color: #FF0000;"></i> Download workout
+                            </li>
+                        </ul>
+                        <button class="btn2 shadow-xl hover:shadow-orange-950">SIGN UP</button>
+                    </div>
+                    <!-- card no 3 -->
+                    <div
+                        class="bg-color-white border-4 border-solid border-color-gray text-center py-2 px-2 rounded-2xl cursor-pointer ease-in duration-200 shadow hover:shadow-lg hover:border-color-secondary">
+                        <h3 class="text-3xl text-color-primary font-bold py-4">Premium</h3>
+                        <p class="leading-relaxed text-color-primary text-2xl">Rs.399.00<span
+                                class="text-lg">/month</span></p>
+                        <ul class="text-color-primary text-left mt-10 mb-10">
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> 20+ fitness
+                                programs</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Access over
+                                2000+ workouts</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Stream from
+                                web, mobile and TV</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Iconic
+                                BODYPUMP workout</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Indoor
+                                Cycling workout</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Plans and
+                                Challenges</li>
+                            <li class="mt-2 mb-2"><i class="fa-solid fa-check" style="color: #2f9330;"></i> Download
+                                workout</li>
+                        </ul>
+                        <button class="btn2 shadow-xl hover:shadow-orange-950">SIGN UP</button>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section id="contact">
+            <!-- Footer container -->
+            <footer
+                class="bg-color-primary-light text-center text-color-white dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+                <div class="text-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+
+                    <!-- Social network icons container -->
+                    <div class="flex justify-center">
+                        <a href="#!" class="mr-6 text-color-white hover:text-color-secondary">
+                            <i class="fa-brands fa-facebook-f fa-xl"></i>
+                        </a>
+                        <a href="#!" class="mr-6 text-color-white hover:text-color-secondary">
+                            <i class="fa-brands fa-twitter fa-xl"></i>
+                        </a>
+                        <a href="#!" class="mr-6 text-color-white hover:text-color-secondary">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mx-6 py-10 text-center md:text-left md:py-16">
+                    <div class="grid gap-x-20 md:grid-cols-2 lg:grid-cols-4">
+                        <div class="">
+                            <div class="py-3 text-color-secondary font-bold text-3xl">
+                                <a href="#home">
+                                    <span class="text-color-white">Fit</span>Quest
+                                </a>
+                            </div>
+                            <p class="py-3">
+                                Empowering you to reach new heights in fitness and well-being, one step at a time
+                            </p>
+                        </div>
+
+                        <!-- Useful links section -->
+                        <div class="mx-50">
+                            <h6
+                                class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-color-secondary">
+                                Useful links
+                            </h6>
+                            <p class="mb-4">
+                                <a href="#!" class="text-color-white hover:text-color-secondary">About Us</a>
+                            </p>
+                            <p class="mb-4">
+                                <a href="#!" class="text-color-white hover:text-color-secondary">Workouts</a>
+                            </p>
+                            <p class="mb-4">
+                                <a href="#!" class="text-color-white hover:text-color-secondary">Blog</a>
+                            </p>
+                            <p class="mb-4">
+                                <a href="#!" class="text-color-white hover:text-color-secondary">Help</a>
+                            </p>
+                        </div>
+
+                        <!-- Contact section -->
+                        <div class="mx-50">
+                            <h6
+                                class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-color-secondary">
+                                Contact
+                            </h6>
+                            <p class="mb-4 flex items-center justify-center md:justify-start">
+                                <i class="fa-solid fa-location-dot me-3"></i>
+                                New York, NY 10012, US
+                            </p>
+                            <p class="mb-4 flex items-center justify-center md:justify-start">
+                                <i class="fa-solid fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p class="mb-4 flex items-center justify-center md:justify-start">
+                                <i class="fa-solid fa-phone me-3"></i>
+                                + 01 234 567 88
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </section>
+    </main>
+
+
+    <script>
+        // mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelector('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark')
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark')
+            })
+        })
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
